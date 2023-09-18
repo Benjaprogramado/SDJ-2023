@@ -7,6 +7,7 @@ import { PreguntadosComponent } from './preguntados/preguntados.component';
 import { MijuegoComponent } from './mijuego/mijuego.component';
 
 const routes: Routes = [
+  { path: '', component: JuegosComponent },
   { path: 'ahorcado', component: AhorcadoComponent },
   { path: 'mayoromenor', component: MayoromenorComponent },
   { path: 'preguntados', component: PreguntadosComponent },
