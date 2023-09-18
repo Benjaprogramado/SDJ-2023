@@ -1,2 +1,45 @@
+<!-- ACA LLAMO A LOS COMPONENTES -->
+<!-- <app-login></app-login> -->
 
-<router-outlet></router-outlet>
+
+
+
+<div class="container">
+  <header class="d-flex justify-content-center py-3">
+    <ul class="nav nav-pills">
+      <li class="nav-item"><a routerLink="/home" routerLinkActive="active" ariaCurrentWhenActive="page"
+          class="nav-link">Home</a></li>
+      <li class="nav-item"><a routerLink="/about" routerLinkActive="active" ariaCurrentWhenActive="page"
+          class="nav-link">¿Quien Soy?</a></li>
+      <li class="nav-item"><a routerLink="/juegos" routerLinkActive="active" ariaCurrentWhenActive="page"
+          class="nav-link">Juegos</a></li>
+      <li class="nav-item"><a routerLink="/login" routerLinkActive="active" ariaCurrentWhenActive="page"
+          class="nav-link">Login</a></li>
+      <!-- <li class="nav-item"><a href="#" class="nav-link">Error</a></li> -->
+      <!-- <li class="nav-item"><a href="#" class="nav-link">About</a></li> -->
+    </ul>
+  </header>
+</div>
+<div class="container" id="mainDiv">
+  <!-- Es donde se msostrara el contenido de las rutas, osea, lo que cambia -->
+  <router-outlet></router-outlet>
+
+</div>
+
+
+
+<footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+  <p class="col-md-4 mb-0 text-muted">© 2023 Benjamin Schell, UTN FRA</p>
+
+  <a href="/"
+    class="col-md-4 d-flex align-items-center justify-content-center mb-3 mb-md-0 me-md-auto link-dark text-decoration-none">
+    <svg class="bi me-2" width="40" height="32">
+      <use xlink:href="#bootstrap"></use>
+    </svg>
+  </a>
+
+  <ul class="nav col-md-4 justify-content-end">
+    <li class="nav-item"><a routerLink="/home" class="nav-link px-2 text-muted">Home</a></li>
+    <li class="nav-item"><a routerLink="/about" class="nav-link px-2 text-muted">¿Quien Soy?</a></li>
+  </ul>
+</footer>

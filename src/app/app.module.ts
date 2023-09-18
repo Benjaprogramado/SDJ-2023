@@ -7,10 +7,7 @@ import { AppComponent } from './app.component';
 import { HomeComponent } from './page/home/home.component';
 import { LoginComponent } from './page/login/login.component';
 import { AboutComponent } from './page/about/about.component';
-import { AhorcadoComponent } from './page/juegos/ahorcado/ahorcado.component';
-import { MayoromenorComponent } from './page/juegos/mayoromenor/mayoromenor.component';
-import { PreguntadosComponent } from './page/juegos/preguntados/preguntados.component';
-import { MijuegoComponent } from './page/juegos/mijuego/mijuego.component';
+
 
 @NgModule({
   declarations: [
@@ -18,10 +15,7 @@ import { MijuegoComponent } from './page/juegos/mijuego/mijuego.component';
     HomeComponent,
     LoginComponent,
     AboutComponent,
-    AhorcadoComponent,
-    MayoromenorComponent,
-    PreguntadosComponent,
-    MijuegoComponent
+
   ],
   imports: [
     BrowserModule,

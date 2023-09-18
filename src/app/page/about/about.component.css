@@ -1,0 +1,8 @@
+*{
+    color: blanchedalmond; 
+    text-align:center;
+  }
+  .img-thumbnail {
+    max-width: 20%;
+    height: auto;
+  }
