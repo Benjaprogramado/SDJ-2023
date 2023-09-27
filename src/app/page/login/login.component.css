@@ -3,6 +3,16 @@ body {
   font-family: 'Roboto', sans-serif;
 }
 
+#logBtns{
+
+  justify-content: center;
+  display: flex;
+  width: inherit;
+  height: inherit;
+  background-color: #274b3c;
+
+}
+
 .login-box {
   margin-top: 30sspx;
   height: auto;
