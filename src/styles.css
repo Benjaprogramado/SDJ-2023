@@ -1,9 +1,10 @@
 /* You can add global styles to this file, and also import other style files */
-html, body{
-    background: #568092;
+.html, body{
+    background: #ffffff;
     font-family: 'Roboto', sans-serif;
     height:100%;
-    margin:0;
+    width: 100%;
+    margin:0px;
     display: flex;
     flex-direction: column;
   }

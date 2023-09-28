@@ -1,52 +1,60 @@
-<div class="container">
-    <div class="row">
-        <div class="col-lg-3 col-md-2"></div>
-        <div class="col-lg-6 col-md-8 login-box">
-            <div class="col-lg-12 login-key">
-                <i class="fa fa-key" aria-hidden="true"></i>
-            </div>
-            <div class="col-lg-12 login-title">
-                LOGIN DE USUARIOS
-            </div>
-
-            <div class="col-lg-12 login-form">
-                <div class="col-lg-12 login-form">
-                    <form>
-                        <div class="form-group">
-                            <label class="form-control-label">USERNAME</label>
-                            <input type="text" class="form-control" [(ngModel)]="usuario.email" name="email">
-                        </div>
-                        <div class="form-group">
-                            <label class="form-control-label">PASSWORD</label>
-                            <input type="password" class="form-control" [(ngModel)]="usuario.password" name="pass">
-                        </div>
-
-                        <div class="col-lg-12 loginbttm">
-                            <div class="col-lg-6 login-btm login-text">
-                                <!-- Error Message -->
-                            </div>
-                            <div class="col-lg-6 login-btm login-button" id="logBtns">
-                                <button type="submit" class="btn btn-outline-primary btn-block m-2"
-                                    (click)="ingresar()">LOGIN</button>
-                                <!-- <button type="button" class="btn btn-outline-primary btn-block m-2"
-                                    (click)="ingresarConGoogle()">LOGIN WHIT GOOGLE</button> -->
-                                <button type="button" class="btn btn-outline-primary btn-block m-2"
-                                    (click)="redirigir()">REGISTRARSE</button>
-                            </div>
-
-                            <div class="col-lg-6 login-btm login-button" id="logBtns">
-                                <button type="submit" class="btn btn-outline-primary btn-block m-2"
-                                    (click)="currentUser()">Usuario Logeado</button>
-                                <button type="button" class="btn btn-outline-primary btn-block m-2"
-                                    (click)="logOut()">Logout</button>
-
-                            </div>
-
-                        </div>
-                    </form>
-                </div>
-            </div>
+<div class="text-center my-5">
+    <div class="container">
+        <div class="row">
             <div class="col-lg-3 col-md-2"></div>
+            <div class="col-lg-6 col-md-8 login-box">
+                <div class="col-lg-12 login-key">
+                    <i class="fa fa-key" aria-hidden="true"></i>
+                </div>
+                <div class="col-lg-12 login-title">
+                    LOGIN DE USUARIOS
+                </div>
+
+                <div class="col-lg-12 login-form">
+                    <div class="col-lg-12 login-form">
+                        <form>
+                            <div class="form-group">
+                                <label class="form-control-label">USERNAME</label>
+                                <input type="text" class="form-control" [(ngModel)]="usuario.email" name="email">
+                            </div>
+                            <div class="form-group">
+                                <label class="form-control-label">PASSWORD</label>
+                                <input type="password" class="form-control" [(ngModel)]="usuario.password" name="pass">
+                            </div>
+
+                            <div class="col-lg-12 loginbttm">
+                                <div class="col-lg-6 login-btm login-text">
+                                    <!-- Error Message -->
+                                </div>
+                                <div class="col-lg-6 login-btm login-button" id="logBtns">
+                                    
+                                        <button type="submit" class="btn btn-outline-primary btn-block m-2"
+                                            (click)="ingresar()">LOGIN</button>
+                                    
+                                        <button type="button" class="btn btn-outline-primary btn-block m-2"
+                                            (click)="redirigir()">REGISTRARSE</button>
+                                    
+
+                                    <!-- <button type="button" class="btn btn-outline-primary btn-block m-2"
+                                    (click)="ingresarConGoogle()">LOGIN WHIT GOOGLE</button> -->
+
+                                </div>
+
+                                <div class="col-lg-6 login-btm login-button" id="logBtns">
+
+                                    <button type="submit" class="btn btn-outline-primary btn-block m-2"
+                                        (click)="currentUser()">Usuario Logeado</button>
+                                    <button type="button" class="btn btn-outline-primary btn-block m-2"
+                                        (click)="logOut()">Logout</button>
+
+                                </div>
+
+                            </div>
+                        </form>
+                    </div>
+                </div>
+
+            </div>
         </div>
     </div>
 </div>

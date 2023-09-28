@@ -3,13 +3,13 @@ body {
   font-family: 'Roboto', sans-serif;
 }
 
-#logBtns{
+#logBtns, button{
 
   justify-content: center;
   display: flex;
-  width: inherit;
-  height: inherit;
-  background-color: #274b3c;
+  width: 100%;
+  height: 100%;
+
 
 }
 

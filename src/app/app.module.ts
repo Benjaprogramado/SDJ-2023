@@ -10,6 +10,8 @@ import { AboutComponent } from './page/about/about.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { FormsModule } from '@angular/forms';
 import {AngularFireModule} from '@angular/fire/compat';
+import { NavbarComponent } from './components/navbar/navbar.component';
+import { FooterComponent } from './components/footer/footer.component';
 
 const firebaseConfig = {
   apiKey: "AIzaSyB5Zhxzm5KpE5E2T-gGgzPEHVsiyET-6B0",
@@ -26,6 +28,8 @@ const firebaseConfig = {
     HomeComponent,
     LoginComponent,
     AboutComponent,
+    NavbarComponent,
+    FooterComponent,
 
   ],
   imports: [
