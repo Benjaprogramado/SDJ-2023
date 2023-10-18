@@ -1,12 +1,12 @@
 <nav class="navbar navbar-expand-lg bg-body-tertiary">
-    <div class="container-fluid col-md-5">
-        <img src="https://cdn-icons-png.flaticon.com/512/1068/1068778.png" width="30" height="24" alt="icon">
+    <div class="container-fluid col-md-3">
+        <img src="./assets/lastIcon.png" alt="icon">
         <div class="container-fluid">
             <a class="navbar-brand" href="#">Sala De Juegos</a>
         </div>
 
     </div>
-    <div class="container-fluid col-md-4">
+    <div class="container-fluid col-md-9" *ngIf="userLogged|async as user; else elseBlock">
 
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
             <li class="nav-item"><a routerLink="/home" routerLinkActive="active" ariaCurrentWhenActive="page"
@@ -15,38 +15,48 @@
                     class="nav-link">¿Quien Soy?</a></li>
             <li class="nav-item"><a routerLink="/juegos" routerLinkActive="active" ariaCurrentWhenActive="page"
                     class="nav-link">Juegos</a></li>
-            <li class="nav-item"><a routerLink="/login" routerLinkActive="active" ariaCurrentWhenActive="page"
-                    class="nav-link">Login</a></li>
         </ul>
+        <div class="container-fluid col-md-3">
 
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item"><a routerLink="/login" routerLinkActive="active" ariaCurrentWhenActive="page"
+                        class="nav-link"><img src="./assets/user.png" alt="icon"></a></li>
+                <li class="nav-item"><a routerLink="/login" routerLinkActive="active" ariaCurrentWhenActive="page"
+                        class="nav-link">{{user.email}}</a></li>
+                <li class="nav-item"><a routerLink="/login" routerLinkActive="active" ariaCurrentWhenActive="page"
+                        class="nav-link"></a></li>
+                <li class="nav-item"><a routerLink="/login" routerLinkActive="active" ariaCurrentWhenActive="page"
+                        class="nav-link" (click)="logOut()">Logout</a></li>
+
+            </ul>
+
+        </div>
 
     </div>
-    <div class="container-fluid col-md-4">
-        <span class="navbar-text">
-            Navbar text with an inline element
-        </span>
-    </div>
+
+    <ng-template #elseBlock>
+        <div class="container-fluid col-md-6" id="navDiv">
+
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0" id="navUl">
+                <li class="nav-item"><a routerLink="/home" routerLinkActive="active" ariaCurrentWhenActive="page"
+                        class="nav-link">Home</a></li>
+                <li class="nav-item"><a routerLink="/login" routerLinkActive="active" ariaCurrentWhenActive="page"
+                        class="nav-link">¿Quien Soy?</a></li>
+                <li class="nav-item"><a routerLink="/login" routerLinkActive="active" ariaCurrentWhenActive="page"
+                        class="nav-link">Juegos</a></li>
+            </ul>
+
+        </div>
+        <div class="container-fluid col-md-3">
+            <img src="./assets/user.png" alt="icon">
+            <div class="container-fluid">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item"><a routerLink="/login" routerLinkActive="active" ariaCurrentWhenActive="page"
+                            class="nav-link">Login</a></li>
+                </ul>
+            </div>
+
+        </div>
+    </ng-template>
+
 </nav>
-
-
-
-
-
-
-
-<!-- <nav class="navbar navbar-expand-lg bg-body-tertiary">
-
-      <ul class="nav nav-pills">
-        <li class="nav-item"><a routerLink="/home" routerLinkActive="active" ariaCurrentWhenActive="page"
-            class="nav-link">Home</a></li>
-        <li class="nav-item"><a routerLink="/about" routerLinkActive="active" ariaCurrentWhenActive="page"
-            class="nav-link">¿Quien Soy?</a></li>
-        <li class="nav-item"><a routerLink="/juegos" routerLinkActive="active" ariaCurrentWhenActive="page"
-            class="nav-link">Juegos</a></li>
-        <li class="nav-item"><a routerLink="/login" routerLinkActive="active" ariaCurrentWhenActive="page"
-            class="nav-link">Login</a></li>
-        <li class="nav-item"><a href="#" class="nav-link">Error</a></li>
-        <li class="nav-item"><a href="#" class="nav-link">About</a></li>
-      </ul>
-
-  </nav> -->

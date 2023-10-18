@@ -4,10 +4,12 @@ import { ErrorComponent } from './page/error/error.component';
 import { LoginComponent } from './page/login/login.component';
 import { AboutComponent } from './page/about/about.component';
 import { HomeComponent } from './page/home/home.component';
+import { RegisterComponent } from './page/register/register.component';
 
 const routes: Routes = [
   { path: '', redirectTo: '/login', pathMatch:'full'},
   { path: 'login', component: LoginComponent },
+  { path: 'register', component: RegisterComponent },
   { path: 'about', component:AboutComponent },
   { path: 'home', component:HomeComponent },
   {

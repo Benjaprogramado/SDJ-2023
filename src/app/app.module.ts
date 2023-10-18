@@ -12,6 +12,7 @@ import { FormsModule } from '@angular/forms';
 import {AngularFireModule} from '@angular/fire/compat';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { FooterComponent } from './components/footer/footer.component';
+import { RegisterComponent } from './page/register/register.component';
 
 const firebaseConfig = {
   apiKey: "AIzaSyB5Zhxzm5KpE5E2T-gGgzPEHVsiyET-6B0",
@@ -30,6 +31,7 @@ const firebaseConfig = {
     AboutComponent,
     NavbarComponent,
     FooterComponent,
+    RegisterComponent,
 
   ],
   imports: [
